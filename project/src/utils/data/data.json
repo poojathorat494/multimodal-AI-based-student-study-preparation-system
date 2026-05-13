@@ -1,0 +1,927 @@
+[
+  {
+    "question": "Hi",
+    "answer": "Hi there! Ready to help you study. What topic are you working on?"
+  },
+  {
+    "question": "Hello",
+    "answer": "Hello! I'm your Study Assistant. Ask me anything about AI, Python, Web Dev, DSA, or Placement prep!"
+  },
+  {
+    "question": "Hey",
+    "answer": "Hey! What topic do you want to study today?"
+  },
+  {
+    "question": "Namaste",
+    "answer": "Namaste! Kasa aahe? Let's study together. Which subject do you want to start with?"
+  },
+  {
+    "question": "placement",
+    "answer": "For placement preparation, focus on: DSA (Arrays, Trees, Graphs, DP), CS Fundamentals (OS, DBMS, Networks, OOP), Projects (2-3 strong projects), Aptitude (Quant, Logical, Verbal), Practice on LeetCode, HackerRank, GeeksForGeeks. Do mock interviews daily!"
+  },
+  {
+    "question": "quiz",
+    "answer": "I can help you practice with quizzes! Just tell me the subject. Example: 'quiz me on Python' or 'quiz me on OS'"
+  },
+  {
+    "question": "quiz me on Python",
+    "answer": "Python Quiz! Q1: What does len([1,2,3]) return? → 3. Q2: type(3.14)? → float. Q3: Output of print(2**3)? → 8. Q4: What is a lambda? → anonymous function. Q5: list(range(1,5))? → [1,2,3,4]. Score yourself!"
+  },
+  {
+    "question": "quiz me on OS",
+    "answer": "OS Quiz! Q1: Full form of OS? → Operating System. Q2: What is deadlock? → Circular waiting for resources. Q3: What is FCFS? → First Come First Served scheduling. Q4: What is virtual memory? → Using disk as RAM extension. Q5: What is a semaphore? → Synchronization tool."
+  },
+  {
+    "question": "quiz me on DBMS",
+    "answer": "DBMS Quiz! Q1: What is ACID? → Atomicity, Consistency, Isolation, Durability. Q2: What is 1NF? → Atomic values, no repeating groups. Q3: What is a primary key? → Uniquely identifies a row. Q4: What is a foreign key? → References primary key of another table. Q5: What is indexing? → Speeds up data retrieval."
+  },
+  {
+    "question": "quiz me on DSA",
+    "answer": "DSA Quiz! Q1: Time complexity of binary search? → O(log n). Q2: Which DS uses LIFO? → Stack. Q3: Which DS uses FIFO? → Queue. Q4: What is a leaf node? → Node with no children. Q5: Best sorting algorithm? → Merge Sort O(n log n). Great practice!"
+  },
+  {
+    "question": "What is AI?",
+    "answer": "Artificial Intelligence (AI) is a branch of computer science that focuses on creating intelligent machines capable of performing tasks that normally require human intelligence. These tasks include learning from experience, reasoning, problem-solving, understanding natural language, and decision-making. AI is widely used in applications such as chatbots, virtual assistants, self-driving cars, and recommendation systems."
+  },
+  {
+    "question": "What is Machine Learning?",
+    "answer": "Machine Learning (ML) is a subset of AI that allows systems to learn from data without being explicitly programmed. Types: Supervised Learning (labeled data), Unsupervised Learning (unlabeled data), Reinforcement Learning (reward-based). Algorithms include Linear Regression, Decision Trees, SVM, KNN, Random Forest, Neural Networks."
+  },
+  {
+    "question": "What is Deep Learning?",
+    "answer": "Deep Learning uses multi-layered Neural Networks to learn from large amounts of data. Structure: Input Layer → Hidden Layers → Output Layer. Each layer learns increasingly complex features. Used in image recognition, speech processing, NLP, self-driving cars. Frameworks: TensorFlow, PyTorch, Keras."
+  },
+  {
+    "question": "What is NLP?",
+    "answer": "NLP (Natural Language Processing) enables machines to understand, interpret, and generate human language. Tasks: Tokenization, Sentiment Analysis, Named Entity Recognition, Machine Translation, Text Summarization. Tools: NLTK, SpaCy, Hugging Face Transformers, BERT, GPT."
+  },
+  {
+    "question": "What is a Neural Network?",
+    "answer": "A Neural Network is a series of algorithms that attempt to recognize underlying relationships in data through a process that mimics the human brain. Components: Neurons, Weights, Biases, Activation Functions (ReLU, Sigmoid, Softmax), Loss Function, Backpropagation."
+  },
+  {
+    "question": "What is Data Science?",
+    "answer": "Data Science is the field of extracting insights from data using scientific methods, processes, algorithms, and systems. Pipeline: Data Collection → Data Cleaning → EDA → Modeling → Deployment. Tools: Python, R, Pandas, NumPy, Matplotlib, Scikit-learn, SQL, Tableau."
+  },
+  {
+    "question": "What is Python?",
+    "answer": "Python is a high-level, interpreted programming language known for simplicity and readability. Features: Easy syntax, large standard library, dynamically typed, object-oriented + functional. Used for: AI/ML, Web Dev (Django, Flask), Data Science, Automation, Scripting."
+  },
+  {
+    "question": "What is a variable?",
+    "answer": "A variable is a named container that stores data in memory. In Python: x = 10, name = 'Arjun', pi = 3.14, is_valid = True. Python is dynamically typed so no need to declare the type. Variables can hold integers, floats, strings, lists, dicts, objects."
+  },
+  {
+    "question": "What is a list in Python?",
+    "answer": "A list is an ordered, mutable collection that can hold mixed data types. Example: fruits = ['apple', 'banana', 'mango']. Methods: append(), pop(), remove(), sort(), reverse(), len(), index(), count(), extend(), insert(). Lists support slicing: fruits[1:3]."
+  },
+  {
+    "question": "What is a dictionary in Python?",
+    "answer": "A dictionary stores data in key-value pairs. Example: student = {'name': 'Priya', 'age': 20}. Methods: keys(), values(), items(), get(), update(), pop(). Dictionaries are unordered (Python 3.7+ maintains insertion order), mutable, and keys must be unique."
+  },
+  {
+    "question": "What is a function?",
+    "answer": "A function is a reusable block of code that performs a specific task. Types: Built-in (print, len), User-defined (def greet(name): return 'Hello ' + name), Lambda (lambda x: x*2), Recursive. Arguments: positional, keyword, default, *args, **kwargs."
+  },
+  {
+    "question": "What is OOP?",
+    "answer": "OOP (Object-Oriented Programming) organizes code around objects. 4 Pillars: Encapsulation (hide data), Inheritance (child gets parent features), Polymorphism (same interface, different behavior), Abstraction (hide complexity). Key concepts: Class, Object, Constructor (__init__), self keyword."
+  },
+  {
+    "question": "What is inheritance in Python?",
+    "answer": "Inheritance allows a child class to inherit attributes and methods from a parent class. Types: Single, Multiple, Multilevel, Hierarchical, Hybrid. Example: class Dog(Animal): pass. Use super() to call parent methods. Enables code reusability."
+  },
+  {
+    "question": "What is a decorator in Python?",
+    "answer": "A decorator is a function that adds extra functionality to another function without modifying it. Syntax: @decorator_name before the function. Common decorators: @staticmethod, @classmethod, @property, @login_required. Used in Flask, Django extensively."
+  },
+  {
+    "question": "What is a generator in Python?",
+    "answer": "A generator is a function that yields values one at a time using the yield keyword. Memory efficient — doesn't store all values in memory. Example: def count_up(n): for i in range(n): yield i. Use next() to get values. Can be used in for loops."
+  },
+  {
+    "question": "What are list comprehensions?",
+    "answer": "List comprehensions provide a concise way to create lists. Syntax: [expression for item in iterable if condition]. Example: squares = [x**2 for x in range(10)]. Faster than loops. Also: dict comprehensions {k:v}, set comprehensions {x}."
+  },
+  {
+    "question": "What is exception handling in Python?",
+    "answer": "Exception handling manages runtime errors gracefully. Syntax: try: risky code, except ExceptionType as e: handle error, else: runs if no error, finally: always runs. Common exceptions: ValueError, TypeError, KeyError, IndexError, FileNotFoundError, ZeroDivisionError."
+  },
+  {
+    "question": "What is a module in Python?",
+    "answer": "A module is a Python file containing functions, classes, and variables. Import: import math, from math import sqrt, import numpy as np. Standard library modules: os, sys, math, random, datetime, json, re, collections, itertools."
+  },
+  {
+    "question": "What is HTML?",
+    "answer": "HTML (HyperText Markup Language) is the standard language used to structure web pages. Key tags: <html>, <head>, <body>, <h1>-<h6>, <p>, <a>, <img>, <div>, <span>, <ul>, <ol>, <li>, <table>, <form>, <input>, <button>. HTML5 adds: <header>, <footer>, <nav>, <section>, <article>, <canvas>."
+  },
+  {
+    "question": "What is CSS?",
+    "answer": "CSS (Cascading Style Sheets) styles and designs HTML elements. Selectors: element, class (.), id (#), pseudo (:hover, :focus). Box Model: margin → border → padding → content. Key features: Flexbox, Grid, Animations, Transitions, Media Queries (Responsive Design), CSS Variables."
+  },
+  {
+    "question": "What is JavaScript?",
+    "answer": "JavaScript is a high-level programming language that makes web pages interactive. Features: DOM Manipulation, Event Handling, Async/Await, Fetch API, ES6+ features (arrow functions, destructuring, spread, template literals). Ecosystem: React, Vue, Angular (frontend), Node.js (backend)."
+  },
+  {
+    "question": "What is React?",
+    "answer": "React is a JavaScript library by Meta for building fast, component-based UIs. Key Concepts: JSX (HTML in JS), Components (functional/class), Props (pass data), State (dynamic data), Hooks (useState, useEffect, useContext, useRef), Virtual DOM (efficient updates), React Router, Redux."
+  },
+  {
+    "question": "What is Node.js?",
+    "answer": "Node.js is a JavaScript runtime built on Chrome's V8 engine that allows running JS on the server side. Features: Non-blocking I/O, Event-driven, Single-threaded with event loop. Used for: REST APIs, Real-time apps, Microservices. Package manager: npm. Popular frameworks: Express.js."
+  },
+  {
+    "question": "What is a database?",
+    "answer": "A database is an organized collection of structured data stored electronically. Types: Relational/SQL (MySQL, PostgreSQL, Oracle, SQLite), NoSQL (MongoDB, Redis, Cassandra, Firebase), NewSQL, In-memory (Redis). Managed by DBMS. Used in every application to persist data."
+  },
+  {
+    "question": "What is SQL?",
+    "answer": "SQL (Structured Query Language) manages relational databases. DDL: CREATE, ALTER, DROP. DML: SELECT, INSERT, UPDATE, DELETE. DCL: GRANT, REVOKE. TCL: COMMIT, ROLLBACK. Key clauses: WHERE, GROUP BY, HAVING, ORDER BY, LIMIT, JOIN (INNER, LEFT, RIGHT, FULL). Functions: COUNT, SUM, AVG, MAX, MIN."
+  },
+  {
+    "question": "What is DBMS?",
+    "answer": "DBMS (Database Management System) manages databases. Key concepts: ACID (Atomicity, Consistency, Isolation, Durability), Normalization (1NF, 2NF, 3NF, BCNF), Indexing, Transactions, ER Model, Joins, Views, Triggers, Stored Procedures. Examples: MySQL, Oracle, MongoDB, PostgreSQL, SQLite."
+  },
+  {
+    "question": "What is normalization?",
+    "answer": "Normalization reduces data redundancy and improves data integrity. 1NF: Atomic values, no repeating groups. 2NF: 1NF + no partial dependency. 3NF: 2NF + no transitive dependency. BCNF: Stricter 3NF. Denormalization improves read performance at the cost of redundancy."
+  },
+  {
+    "question": "What is a JOIN in SQL?",
+    "answer": "JOIN combines rows from two or more tables based on a related column. INNER JOIN: only matching rows. LEFT JOIN: all left + matching right. RIGHT JOIN: all right + matching left. FULL JOIN: all rows from both. CROSS JOIN: cartesian product. SELF JOIN: join table with itself."
+  },
+  {
+    "question": "What is cloud computing?",
+    "answer": "Cloud computing delivers computing services (servers, storage, databases, networking, software) over the internet. Service Models: IaaS (AWS EC2), PaaS (Heroku), SaaS (Gmail). Deployment: Public, Private, Hybrid, Multi-cloud. Providers: AWS, Microsoft Azure, Google Cloud, IBM Cloud."
+  },
+  {
+    "question": "What is AWS?",
+    "answer": "AWS (Amazon Web Services) is the world's leading cloud platform. Key services: EC2 (virtual servers), S3 (object storage), RDS (managed databases), Lambda (serverless), EKS (Kubernetes), CloudFront (CDN), IAM (identity management), VPC (networking). Used by Netflix, Airbnb, NASA."
+  },
+  {
+    "question": "What is an Operating System?",
+    "answer": "An Operating System manages hardware and software resources. Functions: Process Management, Memory Management, File System Management, Device Management, Security & Access Control. Types: Single-user (Windows), Multi-user (Linux), Real-time (RTOS). Examples: Windows, Linux, macOS, Android, iOS."
+  },
+  {
+    "question": "What is process scheduling?",
+    "answer": "CPU Scheduling determines which process runs on CPU. Algorithms: FCFS (First Come First Served), SJF (Shortest Job First), Round Robin (time quantum), Priority Scheduling, MLFQ (Multi-Level Feedback Queue). Metrics: Turnaround time, Waiting time, CPU Utilization, Throughput, Response time."
+  },
+  {
+    "question": "What is deadlock?",
+    "answer": "Deadlock is when processes are permanently stuck waiting for resources held by each other. 4 Necessary Conditions: Mutual Exclusion, Hold and Wait, No Preemption, Circular Wait. Prevention: Banker's Algorithm, Resource Ordering. Detection: Resource Allocation Graph (RAG). Recovery: kill process or preempt resource."
+  },
+  {
+    "question": "What is virtual memory?",
+    "answer": "Virtual Memory allows processes to use more memory than physically available by using disk space as an extension of RAM. Techniques: Paging (fixed-size blocks called pages), Segmentation (logical divisions). Page Replacement Algorithms: FIFO, LRU (Least Recently Used), Optimal. Enables multitasking and process isolation."
+  },
+  {
+    "question": "What is a semaphore?",
+    "answer": "A semaphore is a synchronization tool used to control access to shared resources in concurrent programming. Types: Binary semaphore (0 or 1, like mutex), Counting semaphore (any non-negative value). Operations: wait() / P() decrements, signal() / V() increments. Solves producer-consumer, readers-writers problems."
+  },
+  {
+    "question": "What is computer networking?",
+    "answer": "Computer Networking connects computers to share data and resources. Key concepts: IP Address (IPv4/IPv6), MAC Address, Subnetting, CIDR, Routing, Switching, DNS, DHCP, HTTP/HTTPS, FTP, SMTP, TCP/IP Model (4 layers), OSI Model (7 layers). Devices: Router, Switch, Hub, Modem, Firewall."
+  },
+  {
+    "question": "What is the OSI model?",
+    "answer": "OSI Model has 7 layers: 7-Application (HTTP, FTP, SMTP), 6-Presentation (SSL/TLS, encoding), 5-Session (connection management), 4-Transport (TCP/UDP, ports), 3-Network (IP, routing), 2-Data Link (MAC, framing, Ethernet), 1-Physical (cables, signals, bits). Mnemonic: All People Seem To Need Data Processing."
+  },
+  {
+    "question": "What is TCP vs UDP?",
+    "answer": "TCP: Connection-oriented, reliable delivery (ACK), ordered packets, flow control, slower. Used for: HTTP, FTP, Email, SSH. UDP: Connectionless, no guarantee, faster, no ordering. Used for: Video streaming, DNS, Gaming, VoIP, Live broadcast. TCP is like registered post; UDP is like a radio broadcast."
+  },
+  {
+    "question": "What is DNS?",
+    "answer": "DNS (Domain Name System) translates human-readable domain names to IP addresses. Process: Browser → DNS Resolver → Root Server → TLD Server → Authoritative Server → IP address. DNS record types: A (IPv4), AAAA (IPv6), CNAME (alias), MX (mail), TXT (verification), NS (name server)."
+  },
+  {
+    "question": "What is HTTP vs HTTPS?",
+    "answer": "HTTP (HyperText Transfer Protocol) is the foundation of data communication on the Web. HTTPS = HTTP + SSL/TLS encryption. HTTP methods: GET (fetch), POST (create), PUT (update), DELETE (remove), PATCH (partial update). Status codes: 200 OK, 201 Created, 404 Not Found, 500 Server Error, 301 Redirect."
+  },
+  {
+    "question": "What are data structures?",
+    "answer": "Data Structures organize and store data efficiently. Linear: Array, Linked List, Stack, Queue, Deque. Non-Linear: Tree (Binary, BST, AVL, Heap, Trie), Graph. Hashing: Hash Table, Hash Map. Choosing the right DS is crucial. Time complexity (Big-O) determines performance. Space complexity also matters."
+  },
+  {
+    "question": "What is an array?",
+    "answer": "An array is a fixed-size collection of elements of the same type stored in contiguous memory locations. Access: O(1). Search: O(n). Insert/Delete at end: O(1). Insert/Delete in middle: O(n). In Python, lists are dynamic arrays. NumPy arrays are true fixed-type arrays used in data science."
+  },
+  {
+    "question": "What is a linked list?",
+    "answer": "A Linked List is a sequence of nodes where each node stores data and a pointer to the next node. Types: Singly (one direction), Doubly (prev + next pointers), Circular (last points to first). Insert/Delete at head: O(1). Access by index: O(n). No random access. Dynamic size."
+  },
+  {
+    "question": "What is a stack?",
+    "answer": "A Stack is a LIFO (Last In First Out) data structure. Operations: push() add on top, pop() remove from top, peek()/top() view top — all O(1). Used in: function call stack, undo/redo operations, expression evaluation, bracket matching, DFS traversal, backtracking algorithms."
+  },
+  {
+    "question": "What is a queue?",
+    "answer": "A Queue is a FIFO (First In First Out) data structure. Operations: enqueue() add to rear, dequeue() remove from front — O(1). Types: Simple Queue, Circular Queue, Priority Queue, Deque (double-ended). Used in: CPU scheduling, BFS traversal, printer spooling, message queues, bandwidth management."
+  },
+  {
+    "question": "What is a binary tree?",
+    "answer": "A Binary Tree is a hierarchical DS where each node has at most 2 children (left and right). Types: Full BT (every node has 0 or 2 children), Complete BT, Perfect BT, Balanced BT. Traversals: Inorder (Left-Root-Right), Preorder (Root-Left-Right), Postorder (Left-Right-Root), BFS/Level Order."
+  },
+  {
+    "question": "What is BST?",
+    "answer": "BST (Binary Search Tree): Left child < Parent < Right child. Search: O(log n) average, O(n) worst. Insert: O(log n) average. Delete: O(log n) average. Inorder traversal of BST gives sorted output. Problems: self-balancing BSTs (AVL, Red-Black) solve the O(n) worst case."
+  },
+  {
+    "question": "What is a heap?",
+    "answer": "A Heap is a complete binary tree satisfying the heap property. Max-Heap: parent >= children. Min-Heap: parent <= children. Operations: insert O(log n), extract-min/max O(log n), heapify O(n). Used in: Priority Queue, Heap Sort O(n log n), Dijkstra's algorithm, scheduling."
+  },
+  {
+    "question": "What is a graph?",
+    "answer": "A Graph G = (V, E) consists of vertices and edges. Types: Directed/Undirected, Weighted/Unweighted, Cyclic/Acyclic (DAG). Representations: Adjacency Matrix O(V²), Adjacency List O(V+E). Traversals: BFS (queue, shortest path in unweighted), DFS (stack/recursion, connectivity). Applications: Maps, Social Networks, Compilers."
+  },
+  {
+    "question": "What is BFS?",
+    "answer": "BFS (Breadth First Search) traverses a graph level by level using a Queue. Time: O(V+E). Space: O(V). Used for: Shortest path in unweighted graphs, Level order traversal, Connected components, Bipartite check, Web crawling. Algorithm: start node → enqueue → visit neighbors → dequeue → repeat."
+  },
+  {
+    "question": "What is DFS?",
+    "answer": "DFS (Depth First Search) traverses a graph by going as deep as possible using a Stack or recursion. Time: O(V+E). Space: O(V). Used for: Cycle detection, Topological sort, Connected components, Maze solving, Strongly connected components (Kosaraju's algorithm)."
+  },
+  {
+    "question": "What is sorting?",
+    "answer": "Sorting arranges elements in order. Comparison-based: Bubble Sort O(n²), Selection Sort O(n²), Insertion Sort O(n²), Merge Sort O(n log n), Quick Sort O(n log n) avg, Heap Sort O(n log n). Non-comparison: Counting Sort O(n+k), Radix Sort O(nk), Bucket Sort. Best general: Merge Sort (stable) or Quick Sort (in-place)."
+  },
+  {
+    "question": "What is recursion?",
+    "answer": "Recursion is when a function calls itself to solve a smaller version of the problem. Must have: base case (stop condition) + recursive case. Example: factorial(n) = n * factorial(n-1). Base: factorial(0) = 1. Used in: Tree traversal, DFS, Divide and Conquer, Backtracking, Dynamic Programming."
+  },
+  {
+    "question": "What is dynamic programming?",
+    "answer": "Dynamic Programming (DP) solves complex problems by breaking them into overlapping subproblems and storing results (memoization/tabulation). Approaches: Top-Down (recursion + memo), Bottom-Up (iterative table). Classic problems: Fibonacci, 0/1 Knapsack, Longest Common Subsequence, Longest Increasing Subsequence, Coin Change, Edit Distance, Matrix Chain Multiplication."
+  },
+  {
+    "question": "What is Big O notation?",
+    "answer": "Big-O describes algorithm efficiency as input size grows. O(1) Constant, O(log n) Logarithmic (binary search), O(n) Linear (linear search), O(n log n) Merge sort, O(n²) Bubble sort nested loops, O(2ⁿ) Exponential (naive recursion), O(n!) Factorial (permutations). Always optimize for best Big-O in interviews!"
+  },
+  {
+    "question": "What is binary search?",
+    "answer": "Binary Search finds an element in a sorted array by repeatedly halving the search range. Time: O(log n). Space: O(1) iterative, O(log n) recursive. Condition: array must be sorted. Algorithm: mid = (low+high)//2, compare target with mid, narrow to left or right half. Used in: search problems, finding boundaries."
+  },
+  {
+    "question": "What is hashing?",
+    "answer": "Hashing converts data into a fixed-size hash value using a hash function. Hash Table provides O(1) average for insert, delete, search. Collision resolution: Chaining (linked lists at each slot), Open Addressing (linear probing, quadratic probing, double hashing). Used in: dictionaries, sets, caches, databases."
+  },
+  {
+    "question": "What is Git?",
+    "answer": "Git is a distributed version control system. Commands: git init, git clone, git add, git commit, git push, git pull, git branch, git merge, git rebase, git stash, git log, git diff, git checkout, git reset, git revert. Branching strategies: Git Flow, GitHub Flow. Platforms: GitHub, GitLab, Bitbucket."
+  },
+  {
+    "question": "What is an API?",
+    "answer": "API (Application Programming Interface) allows applications to communicate. REST API uses HTTP methods: GET (read), POST (create), PUT (update), DELETE (delete), PATCH (partial update). Status codes: 200 OK, 201 Created, 400 Bad Request, 401 Unauthorized, 404 Not Found, 500 Server Error. Data format: JSON or XML."
+  },
+  {
+    "question": "What is Docker?",
+    "answer": "Docker is a platform for containerizing applications. Container: lightweight, portable, isolated environment. Key concepts: Dockerfile (build instructions), Image (blueprint), Container (running instance), Docker Compose (multi-container apps), Docker Hub (registry). Benefits: consistency across environments, microservices deployment."
+  },
+  {
+    "question": "What is Kubernetes?",
+    "answer": "Kubernetes (K8s) is a container orchestration platform. Features: Auto-scaling, Self-healing, Load balancing, Rolling updates, Service discovery. Key objects: Pod (smallest deployable unit), Deployment, Service, Ingress, ConfigMap, Secret, Namespace. Used with Docker containers in production environments."
+  },
+  {
+    "question": "What is a microservice?",
+    "answer": "Microservices architecture breaks an application into small, independent services that communicate via APIs. Benefits: Independent deployment, scalability, fault isolation, technology flexibility. Vs Monolithic: monolith is one big codebase; microservices are many small services. Tools: Docker, Kubernetes, RabbitMQ, Kafka."
+  },
+  {
+    "question": "What is DevOps?",
+    "answer": "DevOps combines Development and Operations to shorten the development lifecycle. Practices: CI/CD (Continuous Integration/Delivery), Infrastructure as Code, Monitoring, Automation. Tools: Jenkins, GitHub Actions, Docker, Kubernetes, Ansible, Terraform, Prometheus, Grafana. Goal: faster, reliable software delivery."
+  },
+  {
+    "question": "What is a REST API?",
+    "answer": "REST (Representational State Transfer) is an architectural style for APIs. Principles: Stateless, Client-Server, Cacheable, Uniform Interface, Layered System. HTTP Methods: GET, POST, PUT, DELETE, PATCH. Response format: JSON. Authentication: JWT, OAuth 2.0, API Keys. Tools: Postman for testing."
+  },
+  {
+    "question": "What is JSON?",
+    "answer": "JSON (JavaScript Object Notation) is a lightweight data interchange format. Syntax: {\"key\": \"value\"}. Supports: strings, numbers, booleans, null, arrays [], objects {}. In Python: import json, json.loads() (string to dict), json.dumps() (dict to string). Used in APIs, config files, databases like MongoDB."
+  },
+  {
+    "question": "What is Django?",
+    "answer": "Django is a high-level Python web framework. Features: ORM (database abstraction), URL routing, Template engine, Admin panel (auto-generated), Authentication system, Security features (CSRF, SQL injection protection). Architecture: MVT (Model-View-Template). Used by: Instagram, Pinterest, Disqus."
+  },
+  {
+    "question": "What is Flask?",
+    "answer": "Flask is a lightweight Python web microframework. Minimal, flexible, easy to learn. Features: URL routing (@app.route), Jinja2 templates, Request/Response objects, Blueprints (for large apps). Use for: REST APIs, small to medium web apps. pip install flask. Compare to Django: Flask is lighter, Django has more built-in features."
+  },
+  {
+    "question": "What is cybersecurity?",
+    "answer": "Cybersecurity protects systems, networks, and data from digital attacks. Types of attacks: Phishing, SQL Injection, XSS (Cross-Site Scripting), CSRF, DDoS, Man-in-the-Middle, Ransomware, Brute Force. Defenses: Encryption, Firewalls, Authentication (2FA), Input Validation, HTTPS, Regular Audits."
+  },
+  {
+    "question": "What is encryption?",
+    "answer": "Encryption converts plaintext to ciphertext using an algorithm and key. Types: Symmetric (same key for encrypt/decrypt — AES, DES), Asymmetric (public/private key pair — RSA, ECC). Hashing (one-way — MD5, SHA-256). Used in: HTTPS, passwords, file security, digital signatures, WhatsApp end-to-end encryption."
+  },
+  {
+    "question": "What is blockchain?",
+    "answer": "Blockchain is a distributed, decentralized, immutable ledger. Key properties: Decentralized (no single authority), Immutable (cannot alter past records), Transparent (public ledger), Secure (cryptographic hashing). Consensus: Proof of Work, Proof of Stake. Applications: Cryptocurrency (Bitcoin, Ethereum), Smart Contracts, Supply Chain, Healthcare."
+  },
+  {
+    "question": "What is IoT?",
+    "answer": "IoT (Internet of Things) connects physical devices to the internet to collect and share data. Examples: Smart Home (Alexa, Nest), Wearables (Apple Watch, Fitbit), Industrial IoT (sensors in factories), Smart Cities. Technologies: MQTT protocol, Raspberry Pi, Arduino, Edge Computing, Cloud IoT platforms (AWS IoT, Azure IoT Hub)."
+  },
+  {
+    "question": "What is AR and VR?",
+    "answer": "AR (Augmented Reality) overlays digital content on the real world. VR (Virtual Reality) creates a fully immersive digital environment. MR (Mixed Reality) combines both. Tools: Unity, Unreal Engine. AR: Pokemon Go, Snapchat filters, IKEA Place. VR: Oculus Quest, PlayStation VR. Used in gaming, education, healthcare, training."
+  },
+  {
+    "question": "What is quantum computing?",
+    "answer": "Quantum Computing uses quantum mechanics (superposition, entanglement) to process information. Qubits can be 0 and 1 simultaneously (superposition). Quantum gates manipulate qubits. Potential: Break current encryption, simulate molecules, optimize complex systems. Platforms: IBM Quantum, Google Sycamore, Microsoft Azure Quantum. Still in early research stage."
+  },
+  {
+    "question": "What is Agile methodology?",
+    "answer": "Agile is an iterative software development approach. Principles: Customer collaboration, Working software, Responding to change, Individuals and interactions. Frameworks: Scrum (sprints, daily standups, retrospectives), Kanban (visual board, WIP limits), SAFe (scaled agile). Key roles: Product Owner, Scrum Master, Development Team."
+  },
+  {
+    "question": "What is system design?",
+    "answer": "System Design creates the architecture of large-scale applications. Topics: Load Balancing, Caching (Redis, Memcached), Database Sharding, Replication, CAP Theorem, Message Queues (Kafka, RabbitMQ), CDN, Rate Limiting, SQL vs NoSQL, Horizontal vs Vertical Scaling, Microservices. Practice: Design URL Shortener, Twitter, Netflix, Uber, WhatsApp."
+  },
+  {
+    "question": "What is load balancing?",
+    "answer": "Load Balancing distributes incoming network traffic across multiple servers. Algorithms: Round Robin, Least Connections, IP Hash, Weighted Round Robin. Benefits: High availability, Scalability, No single point of failure. Tools: Nginx, HAProxy, AWS Elastic Load Balancer, F5. Layer 4 (TCP/UDP) vs Layer 7 (HTTP/HTTPS) load balancers."
+  },
+  {
+    "question": "What is caching?",
+    "answer": "Caching stores frequently accessed data in fast memory (RAM) to reduce database load and response time. Types: Client-side (browser cache), Server-side, CDN cache, Database query cache. Tools: Redis, Memcached. Cache strategies: Cache-Aside, Read-Through, Write-Through, Write-Behind. Cache eviction: LRU, LFU, FIFO."
+  },
+  {
+    "question": "What is MongoDB?",
+    "answer": "MongoDB is a NoSQL document database that stores data in flexible JSON-like BSON documents. Features: Schema-less, Horizontal scaling (sharding), Aggregation pipeline, Indexing, Replication (replica sets). Operations: insertOne(), find(), updateOne(), deleteOne(). Used when: flexible schema needed, large unstructured data, rapid development."
+  },
+  {
+    "question": "What is Redis?",
+    "answer": "Redis (Remote Dictionary Server) is an in-memory key-value data store. Features: Extremely fast (sub-millisecond), Persistence options (RDB, AOF), Data structures (strings, lists, sets, sorted sets, hashes). Use cases: Caching, Session management, Real-time leaderboards, Pub/Sub messaging, Rate limiting."
+  },
+  {
+    "question": "What is compiler design?",
+    "answer": "Compiler translates high-level source code to machine code. Phases: Lexical Analysis (tokens) → Syntax Analysis/Parsing (parse tree) → Semantic Analysis → Intermediate Code Generation → Code Optimization → Code Generation → Linking. Key concepts: Grammar, Automata, DFA, NFA, Context-Free Grammar, LL/LR parsers."
+  },
+  {
+    "question": "What is an interpreter?",
+    "answer": "An interpreter executes code line by line without prior compilation. Difference from Compiler: Compiler translates entire code first, then runs; interpreter translates and runs line by line. Python uses interpreter. Java uses both (compiled to bytecode, then JVM interprets). Interpreters are slower but easier to debug."
+  },
+  {
+    "question": "What is a pointer?",
+    "answer": "A pointer is a variable that stores the memory address of another variable. Used in C/C++. Example in C: int *ptr = &x; accesses value: *ptr. Use cases: Dynamic memory allocation (malloc, free), arrays, linked lists, function arguments (pass by reference). Python does not have explicit pointers but uses references."
+  },
+  {
+    "question": "What is memory management?",
+    "answer": "Memory Management handles allocation and deallocation of memory. Static allocation (compile time), Dynamic allocation (runtime — malloc/free in C, new/delete in C++). Garbage Collection in Python/Java automatically frees unused memory. Memory issues: Memory leak (not freed), Dangling pointer (pointing to freed memory), Buffer overflow."
+  },
+  {
+    "question": "What is OOPS?",
+    "answer": "OOPS stands for Object-Oriented Programming System. Core principles: Encapsulation (data hiding using private/public access), Inheritance (parent-child class relationship), Polymorphism (method overloading and overriding), Abstraction (abstract classes, interfaces). Interview tip: Know real-world examples for each principle!"
+  },
+  {
+    "question": "What is an interface?",
+    "answer": "An interface defines a contract — a set of methods that a class must implement, without providing the implementation. In Python, interfaces are achieved using Abstract Base Classes (ABC). In Java: interface keyword. Benefits: Multiple inheritance support, Loose coupling, Testability (dependency injection, mocking)."
+  },
+  {
+    "question": "What is the difference between stack and heap memory?",
+    "answer": "Stack Memory: stores local variables and function calls, LIFO, fixed size, faster, automatically managed, thread-private. Heap Memory: dynamic allocation, larger, slower, manually managed (C/C++) or GC (Python/Java), shared across threads. Stack overflow: too many recursive calls. Heap: used for objects, arrays, dynamic data."
+  },
+  {
+    "question": "How to crack coding interviews?",
+    "answer": "Cracking Coding Interviews: 1) Master DSA — Arrays, Strings, Linked Lists, Trees, Graphs, DP, Recursion. 2) Practice on LeetCode (Easy → Medium → Hard). 3) Learn time/space complexity analysis. 4) Solve 2-3 problems daily. 5) Study company-specific patterns. 6) Mock interviews on Pramp, Interviewing.io. 7) Communicate your thought process clearly."
+  },
+  {
+    "question": "What is a resume for placement?",
+    "answer": "Resume Tips for Placement: 1 page max. Include: Contact info, Education (CGPA), Skills (Programming languages, frameworks, tools), Projects (2-3 with tech stack + impact), Internships, Certifications, Achievements (hackathons, competitive coding). Use ATS-friendly format. No photos. Action verbs: Built, Designed, Optimized, Implemented, Reduced. Use LaTeX or standard templates."
+  },
+  {
+    "question": "What is LeetCode?",
+    "answer": "LeetCode is a platform for practicing coding problems to prepare for technical interviews. Has 2500+ problems categorized by topic (Arrays, Trees, DP, etc.) and difficulty (Easy/Medium/Hard). Company-specific problem sets for Google, Amazon, Microsoft, etc. Premium gives access to company-tagged questions. Competitive programming contests weekly."
+  },
+  {
+    "question": "What is CGPA?",
+    "answer": "CGPA (Cumulative Grade Point Average) is the overall average of all semester GPAs. Most companies have a cutoff of 6.0, 6.5, or 7.0 CGPA. Top companies (Google, Microsoft, Amazon) may require 7.5+. While CGPA matters for shortlisting, your skills, projects, and DSA performance matter more in actual interviews. Never stop learning regardless of CGPA!"
+  },
+  {
+    "question": "What is an internship?",
+    "answer": "Internship is a temporary work experience at a company. Types: Summer Internship (2-3 months), Winter Internship (1-2 months), Off-campus, PPO (Pre-Placement Offer — internship converts to full-time job). Where to find: LinkedIn, Internshala, AngelList, company websites, campus placement portal. Apply early, prepare DSA, and build projects beforehand."
+  },
+  {
+    "question": "What is competitive programming?",
+    "answer": "Competitive Programming (CP) involves solving algorithmic problems under time constraints. Platforms: Codeforces, CodeChef, AtCoder, HackerEarth, LeetCode. Topics: Number Theory, Graph Theory, DP, Data Structures, Geometry, String Algorithms. Ratings: Codeforces Div. 1, CodeChef 6-star. CP greatly improves problem-solving for placements."
+  },
+  {
+    "question": "What is open source?",
+    "answer": "Open Source software has publicly available source code that anyone can view, modify, and distribute. Platforms: GitHub, GitLab. Contributing: Find a project, read contributing guidelines, pick an issue (good-first-issue), fork the repo, make changes, submit Pull Request (PR). Benefits for students: Build portfolio, learn from senior devs, get letters of recommendation, GSoC."
+  },
+  {
+    "question": "What is Google Summer of Code?",
+    "answer": "GSoC (Google Summer of Code) is a global program where students contribute to open-source organizations with a stipend from Google. Duration: ~3 months. Stipend: ~$1500-$3300 (varies by country). How to prepare: Start contributing to open source early, pick an organization you like, write a strong proposal, demonstrate prior contributions. Very prestigious for resume!"
+  },
+  {
+    "question": "What is a hackathon?",
+    "answer": "A hackathon is an event where programmers build projects in a short time (24-48 hours) and compete. Types: Coding Hackathons, Product Hackathons, Domain-specific (AI, HealthTech, FinTech). Platforms: Devfolio, Devpost, HackerEarth. Tips: Team of 3-4, clear idea, MVP mindset, good presentation, working demo. Great for learning, networking, prizes, and resume!"
+  },
+  {
+    "question": "bye",
+    "answer": "Bye! All the best for your studies and placement! You got this! Keep learning every day. See you next time!"
+  },
+  {
+    "question": "thank you",
+    "answer": "You're welcome! Keep studying hard. Consistency is the key to success. Feel free to ask anytime!"
+  },
+  {
+    "question": "thanks",
+    "answer": "Anytime! Best of luck with your preparation. Remember: small progress every day leads to big results!"
+  },
+
+  {
+    "question": "What is C programming?",
+    "answer": "C is a general-purpose, procedural programming language developed by Dennis Ritchie in 1972. It is the foundation of most modern languages. Key features: Low-level memory access (pointers), Fast execution, Structured programming, Portable. Used in: OS development (Linux kernel), Embedded systems, System software, Compilers. Important: Always free dynamically allocated memory using free()."
+  },
+  {
+    "question": "What is C++ programming?",
+    "answer": "C++ is an extension of C that supports Object-Oriented Programming. Features: Classes and Objects, Inheritance, Polymorphism, Encapsulation, Templates (generic programming), STL (Standard Template Library — vector, map, set, stack, queue), RAII, Smart Pointers. Used in: Game development, Competitive programming, High-performance systems, Embedded systems."
+  },
+  {
+    "question": "What is Java?",
+    "answer": "Java is a high-level, object-oriented, platform-independent programming language. Principle: Write Once Run Anywhere (WORA) using JVM (Java Virtual Machine). Features: Strong typing, Automatic Garbage Collection, Multi-threading, Rich API. Used in: Android development, Enterprise applications (Spring Boot), Big Data (Hadoop), Web apps. Java frameworks: Spring, Hibernate, Maven, Gradle."
+  },
+  {
+    "question": "What is the JVM?",
+    "answer": "JVM (Java Virtual Machine) is an abstract machine that provides a runtime environment for Java bytecode execution. Java source → javac compiler → Bytecode (.class file) → JVM executes. JVM components: Class Loader, Bytecode Verifier, Interpreter, JIT Compiler, Garbage Collector. JVM makes Java platform-independent. JRE = JVM + libraries. JDK = JRE + development tools."
+  },
+  {
+    "question": "What is multithreading?",
+    "answer": "Multithreading allows concurrent execution of two or more threads within a single process. Thread vs Process: Thread shares memory space; Process has separate memory. Benefits: Better CPU utilization, Faster execution, Responsive UI. Challenges: Race condition, Deadlock, Starvation. Synchronization tools: Mutex, Semaphore, Monitor. In Python: threading module, GIL limits true parallelism."
+  },
+  {
+    "question": "What is concurrency vs parallelism?",
+    "answer": "Concurrency: multiple tasks make progress by interleaving (not necessarily simultaneously). Parallelism: tasks run simultaneously on multiple CPU cores. Concurrency is about dealing with multiple things; Parallelism is about doing multiple things at once. Python: threading (concurrency), multiprocessing (parallelism). Tools: asyncio for async/await concurrency."
+  },
+  {
+    "question": "What is a design pattern?",
+    "answer": "Design Patterns are reusable solutions to commonly occurring problems in software design. Categories: Creational (Singleton, Factory, Builder, Prototype, Abstract Factory), Structural (Adapter, Bridge, Composite, Decorator, Facade, Proxy), Behavioral (Observer, Strategy, Command, Iterator, State, Template Method, Chain of Responsibility). Every senior dev interview asks about these!"
+  },
+  {
+    "question": "What is the Singleton pattern?",
+    "answer": "Singleton ensures only one instance of a class exists and provides a global access point to it. Use cases: Database connection pool, Logger, Configuration manager. In Python: use __new__ method or module-level variable. Thread-safe Singleton uses locks. Anti-pattern concern: makes unit testing harder due to global state. Interview: implement thread-safe Singleton."
+  },
+  {
+    "question": "What is the Factory pattern?",
+    "answer": "Factory Pattern creates objects without specifying the exact class. Factory Method: subclasses decide which object to create. Abstract Factory: creates families of related objects. Use case: When object creation logic is complex or varies. Example: ShapeFactory.create('circle') returns a Circle object. Decouples client code from concrete implementations."
+  },
+  {
+    "question": "What is MVC architecture?",
+    "answer": "MVC (Model-View-Controller) separates application into 3 components. Model: data and business logic. View: UI presentation. Controller: handles user input, updates Model and View. Benefits: Separation of concerns, Easier testing, Maintainability. Used in: Django (MVT), Ruby on Rails, ASP.NET, Spring MVC, Angular. Variants: MVP (Model-View-Presenter), MVVM (Model-View-ViewModel for React/Vue)."
+  },
+  {
+    "question": "What is software testing?",
+    "answer": "Software Testing verifies that software works correctly. Types: Unit Testing (individual functions), Integration Testing (modules together), System Testing (full system), Acceptance Testing (meets requirements). Methodologies: TDD (Test Driven Development — write tests first), BDD (Behavior Driven Development). Tools: PyTest, Jest, JUnit, Selenium, Postman. Coverage: line, branch, path coverage."
+  },
+  {
+    "question": "What is CI/CD?",
+    "answer": "CI/CD automates software delivery. CI (Continuous Integration): developers frequently merge code, automated tests run on each merge. CD (Continuous Delivery): code is always ready to deploy. CD (Continuous Deployment): auto-deploy to production on each passing build. Tools: Jenkins, GitHub Actions, GitLab CI, CircleCI, Travis CI, Azure DevOps. Benefits: Faster releases, fewer bugs, rapid feedback."
+  },
+  {
+    "question": "What is Linux?",
+    "answer": "Linux is an open-source, Unix-like operating system kernel. Distributions: Ubuntu, CentOS, Debian, Fedora, Kali Linux, Arch Linux. Essential commands: ls, cd, pwd, mkdir, rm, cp, mv, cat, grep, chmod, chown, ps, kill, top, df, du, ssh, scp, tar, curl, wget, vim, nano. Shell scripting (bash) is a must-know skill for DevOps and backend roles."
+  },
+  {
+    "question": "What are Linux commands?",
+    "answer": "Important Linux Commands: File ops: ls -la, cd, pwd, mkdir, rm -rf, cp, mv, touch. File content: cat, less, more, head, tail, grep, find, wc. Permissions: chmod 755, chown user:group. Process: ps aux, top, htop, kill -9 PID, nohup. Network: ifconfig, ping, netstat, curl, wget, ssh, scp. Archive: tar -czvf, unzip. Users: adduser, passwd, sudo, su."
+  },
+  {
+    "question": "What is a shell script?",
+    "answer": "Shell Script is a program written in shell language (bash/sh) to automate tasks. Syntax: #!/bin/bash (shebang), variables (NAME='John'), if-else, for/while loops, functions. Example: backup.sh to compress and upload files daily. Run: chmod +x script.sh && ./script.sh. Use cases: Automated backups, Log rotation, System monitoring, Deployment scripts."
+  },
+  {
+    "question": "What is regex?",
+    "answer": "Regex (Regular Expression) is a sequence of characters defining a search pattern. Common patterns: . (any char), * (0 or more), + (1 or more), ? (0 or 1), ^ (start), $ (end), [] (character class), | (or), \\d (digit), \\w (word char), \\s (whitespace). In Python: import re. Methods: re.match(), re.search(), re.findall(), re.sub(). Used in: validation, parsing, search."
+  },
+  {
+    "question": "What is GraphQL?",
+    "answer": "GraphQL is a query language for APIs developed by Facebook. Unlike REST, clients request exactly the data they need — no over-fetching or under-fetching. Single endpoint vs multiple REST endpoints. Schema-first design. Types: Query, Mutation, Subscription. Resolvers fetch data. Tools: Apollo Client, Apollo Server, Hasura, Prisma. Used by: GitHub, Shopify, Twitter."
+  },
+  {
+    "question": "What is WebSocket?",
+    "answer": "WebSocket provides full-duplex (two-way) communication over a single TCP connection. Unlike HTTP (request-response), WebSocket keeps connection open for real-time data. Use cases: Chat applications, Live notifications, Stock price updates, Multiplayer games, Collaborative editing. Libraries: Socket.io (JavaScript), websockets (Python). Protocol: ws:// or wss:// (secure)."
+  },
+  {
+    "question": "What is OAuth?",
+    "answer": "OAuth (Open Authorization) is an authorization framework allowing third-party apps to access user data without exposing passwords. Flow: User logs in with Google/Facebook → Authorization code issued → App exchanges for access token → App accesses API with token. OAuth 2.0 is the current standard. JWT (JSON Web Token) is often used with OAuth. Used everywhere: Login with Google, GitHub OAuth."
+  },
+  {
+    "question": "What is JWT?",
+    "answer": "JWT (JSON Web Token) is a compact, URL-safe token for securely transmitting information. Structure: Header.Payload.Signature (Base64 encoded). Header: algorithm (HS256). Payload: claims (user data, expiry). Signature: HMAC of header+payload with secret. Stateless authentication: no session storage needed. Stored in: localStorage or HttpOnly cookie. Verify on each request."
+  },
+  {
+    "question": "What is SQL injection?",
+    "answer": "SQL Injection is a cyberattack where malicious SQL code is inserted into a query. Example: input ' OR '1'='1 bypasses login. Prevention: Parameterized queries / Prepared Statements, ORM (SQLAlchemy, Hibernate), Input validation, Stored procedures, Least privilege (db user), WAF (Web Application Firewall). Never concatenate user input directly into SQL queries!"
+  },
+  {
+    "question": "What is XSS?",
+    "answer": "XSS (Cross-Site Scripting) is a web security vulnerability where attackers inject malicious scripts into web pages viewed by other users. Types: Stored XSS (in database), Reflected XSS (in URL), DOM-based XSS. Prevention: Input sanitization, Output encoding, Content Security Policy (CSP) headers, HttpOnly cookies, Escape HTML characters (&lt; &gt; &amp;). Use libraries like DOMPurify."
+  },
+  {
+    "question": "What is CSRF?",
+    "answer": "CSRF (Cross-Site Request Forgery) tricks a user into performing unintended actions on a site where they're authenticated. Example: Malicious link triggers bank transfer. Prevention: CSRF tokens (random token in form, verified server-side), SameSite cookie attribute, Verify Origin/Referer header, Re-authentication for sensitive actions. Django and Rails have built-in CSRF protection."
+  },
+  {
+    "question": "What is a firewall?",
+    "answer": "A Firewall is a network security device that monitors and controls incoming/outgoing network traffic based on rules. Types: Packet Filtering (checks IP/port), Stateful Inspection (tracks connections), Application Layer (inspects content), Next-Gen Firewall (deep packet inspection). Software firewalls: iptables (Linux), Windows Defender Firewall. Hardware firewalls: Cisco ASA, Palo Alto."
+  },
+  {
+    "question": "What is VPN?",
+    "answer": "VPN (Virtual Private Network) creates an encrypted tunnel between your device and a server, hiding your internet traffic. Benefits: Privacy (hides IP), Security on public WiFi, Bypass geo-restrictions, Access corporate network remotely. Protocols: OpenVPN, WireGuard, L2TP/IPSec, IKEv2. Types: Remote Access VPN, Site-to-Site VPN. Tools: NordVPN, ExpressVPN, OpenVPN."
+  },
+  {
+    "question": "What is Pandas?",
+    "answer": "Pandas is a Python library for data manipulation and analysis. Key structures: DataFrame (2D table), Series (1D array). Operations: read_csv(), head(), tail(), info(), describe(), dropna(), fillna(), groupby(), merge(), pivot_table(), apply(), iloc[], loc[], value_counts(). Essential for data science. Install: pip install pandas. Works with NumPy and Matplotlib."
+  },
+  {
+    "question": "What is NumPy?",
+    "answer": "NumPy is a Python library for numerical computing. Key features: ndarray (N-dimensional array), Broadcasting, Vectorized operations (much faster than pure Python loops), Linear algebra, Random number generation, Fourier transform. Methods: np.array(), np.zeros(), np.ones(), np.reshape(), np.dot(), np.mean(), np.std(), np.sort(), np.concatenate(). Foundation for all data science in Python."
+  },
+  {
+    "question": "What is Matplotlib?",
+    "answer": "Matplotlib is a Python data visualization library. Types of plots: Line (plt.plot()), Bar (plt.bar()), Scatter (plt.scatter()), Histogram (plt.hist()), Pie (plt.pie()), Heatmap (sns.heatmap). Seaborn is built on Matplotlib with better aesthetics. Key methods: plt.xlabel(), plt.ylabel(), plt.title(), plt.legend(), plt.show(), plt.savefig(). Used in data analysis and ML model evaluation."
+  },
+  {
+    "question": "What is Scikit-learn?",
+    "answer": "Scikit-learn is a Python ML library built on NumPy and SciPy. Features: Classification (SVM, Random Forest, KNN), Regression (Linear, Lasso, Ridge), Clustering (KMeans, DBSCAN), Dimensionality Reduction (PCA, t-SNE), Model selection (train_test_split, cross_val_score, GridSearchCV), Preprocessing (StandardScaler, LabelEncoder, OneHotEncoder). Import: from sklearn.model_selection import train_test_split."
+  },
+  {
+    "question": "What is TensorFlow?",
+    "answer": "TensorFlow is an open-source ML framework by Google. Features: Define and train neural networks, Keras high-level API (built into TF 2.x), TensorBoard for visualization, TF Lite (mobile/edge deployment), TF Serving (production serving). Tensors are multi-dimensional arrays. Model building: Sequential API, Functional API, Subclassing. Used for: Image classification, NLP, Time series."
+  },
+  {
+    "question": "What is PyTorch?",
+    "answer": "PyTorch is an open-source ML framework by Meta. Features: Dynamic computation graph (define-by-run), Pythonic and intuitive, Strong GPU support (CUDA), TorchScript for production, HuggingFace uses PyTorch. Used heavily in research. Key components: Tensor, autograd, nn.Module, DataLoader, Optimizer. Gaining popularity over TensorFlow in academia and research."
+  },
+  {
+    "question": "What is transfer learning?",
+    "answer": "Transfer Learning uses a pre-trained model (trained on large dataset) as a starting point for a new task. Benefits: Less data needed, Faster training, Better performance. Approach: Freeze early layers, fine-tune later layers on your dataset. Popular pretrained models: VGG16, ResNet, BERT, GPT, MobileNet. Example: Use ImageNet-trained ResNet for medical image classification."
+  },
+  {
+    "question": "What is overfitting and underfitting?",
+    "answer": "Overfitting: model learns training data too well — high training accuracy, low test accuracy. It memorizes noise. Underfitting: model too simple — low accuracy on both train and test. Solutions for overfitting: More data, Dropout, Regularization (L1/L2), Early stopping, Cross-validation, Reduce model complexity. For underfitting: More features, More complex model, Train longer."
+  },
+  {
+    "question": "What is cross-validation?",
+    "answer": "Cross-validation evaluates ML model performance on unseen data. K-Fold CV: split data into K folds, train on K-1 folds, test on 1 fold, repeat K times. Average the scores. Stratified K-Fold: maintains class distribution in each fold. Leave-One-Out CV: extreme case, K=n samples. Prevents overfitting assessment. In sklearn: cross_val_score(model, X, y, cv=5)."
+  },
+  {
+    "question": "What is a confusion matrix?",
+    "answer": "Confusion Matrix shows classification model performance. 2x2 matrix: True Positive (TP), True Negative (TN), False Positive (FP), False Negative (FN). Metrics: Accuracy = (TP+TN)/Total, Precision = TP/(TP+FP), Recall = TP/(TP+FN), F1 Score = 2*(Precision*Recall)/(Precision+Recall). Use Recall when FN is costly (cancer detection). Use Precision when FP is costly (spam filter)."
+  },
+  {
+    "question": "What is linear regression?",
+    "answer": "Linear Regression predicts a continuous output based on input features. Equation: y = mx + b (simple) or y = w1x1 + w2x2 + ... + b (multiple). Loss function: Mean Squared Error (MSE). Optimization: Gradient Descent. Assumptions: Linearity, Independence, Homoscedasticity, Normality. Evaluation: R² score, RMSE, MAE. Regularized versions: Lasso (L1), Ridge (L2), ElasticNet."
+  },
+  {
+    "question": "What is logistic regression?",
+    "answer": "Logistic Regression is a classification algorithm (despite the name). Output is probability (0-1) using sigmoid function. Decision boundary at 0.5. Loss: Binary Cross-Entropy. Used for: Binary classification (spam/not spam, disease/no disease). Extends to multiclass via Softmax (Multinomial LR). Regularization: L1 (Lasso) or L2 (Ridge). Sklearn: LogisticRegression(C=1.0)."
+  },
+  {
+    "question": "What is a decision tree?",
+    "answer": "Decision Tree is a tree-like model that makes decisions based on feature values. Splitting criteria: Gini Impurity, Information Gain (Entropy), Chi-square. Advantages: Interpretable, No feature scaling needed, Handles categorical data. Disadvantages: Overfits easily, Unstable. Pruning reduces overfitting. Random Forest = ensemble of decision trees with bagging."
+  },
+  {
+    "question": "What is Random Forest?",
+    "answer": "Random Forest is an ensemble method using multiple decision trees. Bagging: train each tree on random subset of data. Feature randomness: each split considers random subset of features. Final prediction: majority vote (classification) or mean (regression). Reduces overfitting compared to single tree. Hyperparameters: n_estimators, max_depth, min_samples_split. Feature importance ranking built-in."
+  },
+  {
+    "question": "What is SVM?",
+    "answer": "SVM (Support Vector Machine) finds the optimal hyperplane that maximally separates classes. Support Vectors: data points closest to the hyperplane. Margin: distance between hyperplane and support vectors (maximize margin). Kernel trick maps non-linearly separable data to higher dimensions (RBF, Polynomial, Sigmoid kernels). Use cases: Text classification, Image classification, Bioinformatics."
+  },
+  {
+    "question": "What is K-Means clustering?",
+    "answer": "K-Means is an unsupervised clustering algorithm. Steps: 1) Choose K centroids randomly, 2) Assign each point to nearest centroid, 3) Update centroids as mean of cluster, 4) Repeat until convergence. Choose K: Elbow method (plot inertia vs K). Limitations: Assumes spherical clusters, Sensitive to outliers, K must be specified. Alternatives: DBSCAN, Hierarchical, Gaussian Mixture Models."
+  },
+  {
+    "question": "What is PCA?",
+    "answer": "PCA (Principal Component Analysis) reduces dimensionality while preserving variance. Steps: Standardize data, Compute covariance matrix, Find eigenvectors/eigenvalues, Sort by variance, Project data onto top K principal components. Use cases: Visualization (2D/3D), Remove correlated features, Speed up ML training, Noise reduction. In sklearn: PCA(n_components=2).fit_transform(X)."
+  },
+  {
+    "question": "What is a recurrent neural network?",
+    "answer": "RNN (Recurrent Neural Network) processes sequential data by maintaining hidden state. Hidden state passes information from previous timesteps. Problems: Vanishing gradient (LSTM/GRU solve this). LSTM (Long Short-Term Memory): gates control information flow (forget, input, output gates). GRU: simplified LSTM. Use cases: Time series, NLP, Speech recognition, Music generation."
+  },
+  {
+    "question": "What is a CNN?",
+    "answer": "CNN (Convolutional Neural Network) specializes in processing grid-like data (images). Layers: Convolutional layer (feature extraction with filters), Activation (ReLU), Pooling (Max/Average — spatial reduction), Fully Connected (classification). Applications: Image classification, Object detection (YOLO, R-CNN), Face recognition, Medical imaging. Pretrained: VGG, ResNet, MobileNet, EfficientNet."
+  },
+  {
+    "question": "What is the attention mechanism?",
+    "answer": "Attention allows models to focus on relevant parts of input when generating output. Self-Attention: each token attends to all others in the sequence. Multi-Head Attention: multiple attention heads capture different relationships. Query, Key, Value matrices compute attention scores. Foundation of Transformers (BERT, GPT). Solved the bottleneck of seq2seq RNN models."
+  },
+  {
+    "question": "What is a Transformer?",
+    "answer": "Transformer is an architecture based entirely on attention mechanisms, without recurrence. Paper: Attention is All You Need (2017). Components: Multi-Head Self-Attention, Feed-Forward Network, Positional Encoding, Layer Normalization, Residual connections. Used in: BERT (bidirectional), GPT (autoregressive), T5, Vision Transformer (ViT). Revolutionized NLP, now used in CV, audio, and more."
+  },
+  {
+    "question": "What is BERT?",
+    "answer": "BERT (Bidirectional Encoder Representations from Transformers) is a pre-trained NLP model by Google. Bidirectional: reads text both left-to-right AND right-to-left. Pre-training tasks: Masked Language Modeling (MLM), Next Sentence Prediction (NSP). Fine-tune on specific tasks: sentiment analysis, QA, NER. Variants: RoBERTa, DistilBERT, ALBERT, DeBERTa."
+  },
+  {
+    "question": "What is ChatGPT?",
+    "answer": "ChatGPT is a large language model (LLM) by OpenAI based on GPT-4 architecture. Training: Pre-trained on massive text data → Fine-tuned with RLHF (Reinforcement Learning from Human Feedback). Capabilities: text generation, coding, analysis, summarization, translation. GPT stands for Generative Pre-trained Transformer. Competitors: Claude (Anthropic), Gemini (Google), Llama (Meta)."
+  },
+  {
+    "question": "What is generative AI?",
+    "answer": "Generative AI creates new content (text, images, audio, video, code) from learned patterns. Key models: LLMs for text (GPT, Claude, Gemini), Diffusion models for images (DALL-E, Stable Diffusion, Midjourney), GANs, VAEs. Applications: Content creation, Code generation (GitHub Copilot), Drug discovery, Game design, Deepfakes. Ethical concerns: Bias, Misinformation, Copyright."
+  },
+  {
+    "question": "What is aptitude test?",
+    "answer": "Aptitude tests in placement exams measure: Quantitative Ability (arithmetic, percentages, ratios, time-work, profit-loss, pipes-cisterns, speed-time-distance), Logical Reasoning (puzzles, syllogisms, blood relations, seating arrangements, series, coding-decoding), Verbal Ability (reading comprehension, grammar, vocabulary, para jumbles). Practice platforms: IndiaBix, PrepInsta, Testbook, CATKing."
+  },
+  {
+    "question": "What is time and work?",
+    "answer": "Time and Work: If A can do a job in 'a' days, A's 1-day work = 1/a. If A and B work together, combined 1-day work = 1/a + 1/b. Days together = ab/(a+b). Efficiency method: assume total work = LCM of days. Common types: Pipes and cisterns (same concept — inlet fills, outlet empties). Practice 20+ problems to master this topic."
+  },
+  {
+    "question": "What is profit and loss?",
+    "answer": "Profit and Loss: Profit = SP - CP, Loss = CP - SP. Profit% = (Profit/CP) × 100. Loss% = (Loss/CP) × 100. SP = CP × (1 + Profit%/100). Discount = MP - SP. Discount% = (Discount/MP) × 100. Successive discounts: effective discount not simply added. Marked Price: MP × (1 - d1/100) × (1 - d2/100) = Final SP. Key: practice shortcut formulas."
+  },
+  {
+    "question": "What is ratio and proportion?",
+    "answer": "Ratio a:b means a/b. Proportion: a:b = c:d → ad = bc (cross multiplication). Compound Ratio: (a:b) × (c:d) = ac:bd. Inverse Ratio: a:b → b:a. Mixture and Alligation: find ratio to mix two concentrations to get desired concentration. Rule of three: direct proportion and inverse proportion. Practice: salary division, mixture problems, age ratio problems."
+  },
+  {
+    "question": "What is permutation and combination?",
+    "answer": "Permutation: arrangement of objects where ORDER matters. nPr = n!/(n-r)!. Combination: selection where ORDER doesn't matter. nCr = n!/(r!(n-r)!). Key: nCr = nC(n-r). Pascal's triangle. Circular permutation: (n-1)! ways. Applications: passwords (P), team selection (C), seating (P or C based on arrangement). Binomial theorem uses nCr coefficients."
+  },
+  {
+    "question": "What is probability?",
+    "answer": "Probability = Favorable outcomes / Total outcomes. Range: 0 (impossible) to 1 (certain). P(A or B) = P(A) + P(B) - P(A and B). P(A and B) = P(A) × P(B) for independent events. Conditional: P(A|B) = P(A∩B)/P(B). Complementary: P(not A) = 1 - P(A). Common: dice (6 outcomes), coin (2), cards (52), marbles. Bayes theorem for conditional updates."
+  },
+  {
+    "question": "What is HR interview?",
+    "answer": "HR Interview assesses your personality, communication, and cultural fit. Common questions: Tell me about yourself, Why this company?, Strengths and weaknesses, Where do you see yourself in 5 years?, Why should we hire you?, Describe a challenge you overcame, Are you a team player? Tips: Research the company, Prepare STAR format answers, Dress professionally, Be honest, Ask thoughtful questions."
+  },
+  {
+    "question": "Tell me about yourself.",
+    "answer": "Structure: Present → Past → Future. Example: I'm a final year CS student at XYZ College. I have strong skills in Python, DSA, and web development. I've built projects like [X, Y, Z] and completed an internship at [Company]. I'm passionate about AI/ML and eager to contribute to your team's goals. (30-60 seconds. Practice until smooth. No reading from memory.)"
+  },
+  {
+    "question": "What are your strengths?",
+    "answer": "Good strengths to mention: Problem-solving ability, Quick learner, Attention to detail, Teamwork and collaboration, Time management, Technical expertise (specific skills). Format: State the strength → Give an example → Show the result. Example: I'm a quick learner. During my internship, I picked up React.js in 2 weeks and built a dashboard feature that improved team productivity by 30%."
+  },
+  {
+    "question": "What are your weaknesses?",
+    "answer": "Strategy: Mention a genuine weakness that doesn't kill your candidacy + show you're working on it. Good answers: I tend to be a perfectionist (working on setting realistic deadlines), I used to struggle with public speaking (joined Toastmasters and practiced), I sometimes take on too many tasks (learning to prioritize and delegate). Avoid: I work too hard, I'm too dedicated — sound fake."
+  },
+  {
+    "question": "Why do you want to join this company?",
+    "answer": "Research the company before the interview! Structure: 1) Compliment something specific (mission, product, culture, growth, tech stack), 2) Connect to your skills/goals. Example: I've been using your product as a student and I love how [specific feature] solves [real problem]. Your company's focus on AI-driven solutions aligns with my passion for ML, and I'm excited to contribute to that mission."
+  },
+  {
+    "question": "Where do you see yourself in 5 years?",
+    "answer": "Show ambition + loyalty + clarity. Example: In 5 years, I see myself as a strong contributor to your engineering team, hopefully taking on technical leadership responsibilities. I want to deepen my expertise in [relevant domain], build impactful products, and grow with the company. I believe this role gives me the foundation to achieve that. Avoid: wanting to start your own company immediately."
+  },
+  {
+    "question": "What is STAR method?",
+    "answer": "STAR Method structures behavioral interview answers. S - Situation: describe the context. T - Task: what was your responsibility. A - Action: what steps you took. R - Result: the outcome (quantify if possible). Example: S: Our team missed a deadline. T: I was responsible for backend. A: I stayed late, refactored the code, wrote unit tests. R: We deployed 3 days early, reducing bugs by 40%. Use STAR for all 'Tell me about a time...' questions."
+  },
+  {
+    "question": "What is salary negotiation?",
+    "answer": "Salary Negotiation Tips: Research market rates (Glassdoor, LinkedIn, AmbitionBox). Know your worth — skills, projects, internship experience. Never give the first number if possible. Range: give a range where your target is the lower bound. Counter-offer politely: I was expecting something in the range of X-Y based on my research and experience. Practice negotiation — it can add lakhs to your CTC!"
+  },
+  {
+    "question": "What is a linked list vs array?",
+    "answer": "Array: fixed size, contiguous memory, O(1) access, O(n) insert/delete. Linked List: dynamic size, non-contiguous, O(n) access, O(1) insert/delete at head. Use Array when: frequent access by index, size known upfront. Use Linked List when: frequent insert/delete, size unknown. In Python, list is a dynamic array. Linked list not built-in — implement with classes."
+  },
+  {
+    "question": "What is two pointer technique?",
+    "answer": "Two Pointers technique uses two indices to solve array/string problems efficiently. Patterns: Opposite direction (left from start, right from end — used for pair sum, palindrome check), Same direction (slow and fast pointers — detect cycle in linked list, remove duplicates). Reduces O(n²) to O(n). Practice: Two Sum, Container With Most Water, 3Sum, Trapping Rain Water."
+  },
+  {
+    "question": "What is sliding window technique?",
+    "answer": "Sliding Window technique maintains a window (subarray/substring) and slides it across the data. Use when: subarray/substring problems with contiguous elements. Fixed window: size k (e.g., max sum of k elements). Variable window: expand/shrink based on condition (e.g., longest substring without repeating characters). Reduces O(n²) to O(n). Must-know for coding interviews!"
+  },
+  {
+    "question": "What is backtracking?",
+    "answer": "Backtracking explores all possible solutions by building candidates incrementally and abandoning (backtracking) when a candidate is invalid. Template: choose → explore → unchoose. Classic problems: N-Queens, Sudoku Solver, Rat in Maze, Permutations, Subsets, Combination Sum, Word Search, Palindrome Partitioning. Time: exponential but pruning helps. Use recursion with a visited array or in-place marking."
+  },
+  {
+    "question": "What is Greedy algorithm?",
+    "answer": "Greedy algorithms make locally optimal choices at each step, hoping to find a global optimum. Works when: greedy choice property + optimal substructure apply. Classic problems: Activity Selection, Fractional Knapsack, Huffman Coding, Dijkstra's (greedy + DP), Prim's MST, Kruskal's MST (union-find), Job Scheduling. Greedy doesn't always give optimal — verify with proof or counterexample."
+  },
+  {
+    "question": "What is Dijkstra's algorithm?",
+    "answer": "Dijkstra's finds the shortest path from a source to all vertices in a weighted graph (no negative weights). Uses Min-Heap (priority queue). Time: O((V+E) log V). Algorithm: dist[source]=0, all others=infinity, visit nearest unvisited vertex, update neighbors. Applications: GPS navigation, Network routing, Game pathfinding. Bellman-Ford handles negative weights (O(VE))."
+  },
+  {
+    "question": "What is topological sort?",
+    "answer": "Topological Sort gives a linear ordering of vertices in a Directed Acyclic Graph (DAG) where for each edge u→v, u appears before v. Algorithms: Kahn's Algorithm (BFS + indegree count), DFS-based (push to stack after visiting all neighbors). Use cases: Task scheduling, Build systems, Course prerequisites, Dependency resolution. If cycle exists, topological sort is not possible."
+  },
+  {
+    "question": "What is union-find?",
+    "answer": "Union-Find (Disjoint Set Union) efficiently handles: find(x) — which set does x belong to? union(x,y) — merge sets of x and y. Optimizations: Path Compression (make nodes point directly to root), Union by Rank (attach smaller tree under larger). With both: O(α(n)) ≈ O(1) amortized. Used in: Kruskal's MST, Detecting cycles, Network connectivity, LeetCode: Number of Islands, Accounts Merge."
+  },
+  {
+    "question": "What is a trie?",
+    "answer": "Trie (Prefix Tree) is a tree-like data structure for storing strings where each node represents a character. Operations: Insert O(m), Search O(m), StartsWith O(m) where m is string length. Applications: Autocomplete, Spell checker, IP routing, Dictionary, Longest Common Prefix. Space: can be high — compressed tries (Radix Tree) save space. Implement with array[26] or HashMap for children."
+  },
+  {
+    "question": "What is a segment tree?",
+    "answer": "Segment Tree is a tree data structure for range queries and updates. Build: O(n). Query (range sum, range min/max): O(log n). Update: O(log n). Used for: Range Sum Query, Range Minimum Query (RMQ), Interval problems. Lazy propagation handles range updates efficiently. Fenwick Tree (Binary Indexed Tree) is simpler alternative for range sum queries. Important for competitive programming."
+  },
+  {
+    "question": "What is number theory in programming?",
+    "answer": "Number Theory topics for competitive programming: Prime numbers and Sieve of Eratosthenes O(n log log n), GCD and LCM (Euclidean algorithm), Modular arithmetic (a+b)%m, Modular inverse (Fermat's little theorem), Fast exponentiation O(log n), Chinese Remainder Theorem (CRT), Euler's totient function. Most competitive programming problems use mod 1e9+7 or 998244353."
+  },
+  {
+    "question": "What is bit manipulation?",
+    "answer": "Bit Manipulation uses bitwise operators for efficient solutions. Operators: & (AND), | (OR), ^ (XOR), ~ (NOT), << (left shift = multiply by 2), >> (right shift = divide by 2). Tricks: Check if even: n&1==0. Power of 2: n & (n-1) == 0. Count set bits: Brian Kernighan's. XOR: n^n=0, n^0=n (find single element). Swap without temp: a^=b; b^=a; a^=b. Very fast operations!"
+  },
+  {
+    "question": "What is memoization?",
+    "answer": "Memoization is an optimization technique storing results of expensive function calls and returning cached results when same inputs occur again. Top-down DP approach. In Python: use @functools.lru_cache decorator or a dictionary. Example: fib(n) without memo is O(2ⁿ), with memo is O(n). Convert recursive to memoized: add memo dict, check before computing, store result before returning."
+  },
+  {
+    "question": "What is the Fibonacci sequence?",
+    "answer": "Fibonacci: F(0)=0, F(1)=1, F(n)=F(n-1)+F(n-2). Naive recursion: O(2ⁿ). With memoization: O(n) time, O(n) space. Bottom-up DP: O(n) time, O(n) space. Space-optimized: O(n) time, O(1) space (just keep prev two). Matrix exponentiation: O(log n). Golden ratio formula: O(1) but floating point issues. Classic problem to learn recursion, DP, and optimization."
+  },
+  {
+    "question": "What is the knapsack problem?",
+    "answer": "Knapsack Problem: given items with weights and values, maximize value within weight capacity W. 0/1 Knapsack: each item taken or not. DP table: dp[i][w] = max value with i items and capacity w. Time: O(nW), Space: O(nW) or O(W). Fractional Knapsack: greedy (take fractions) — sort by value/weight ratio. Unbounded Knapsack: items can be repeated. Foundation for many DP problems."
+  },
+  {
+    "question": "What is LCS?",
+    "answer": "LCS (Longest Common Subsequence): find the longest sequence present in both strings in the same order (not necessarily contiguous). DP solution: if s1[i]==s2[j]: dp[i][j]=1+dp[i-1][j-1] else: dp[i][j]=max(dp[i-1][j], dp[i][j-1]). Time: O(mn), Space: O(mn). Related: Longest Common Substring (contiguous), Edit Distance, Shortest Common Supersequence."
+  },
+  {
+    "question": "What is a hash map?",
+    "answer": "HashMap (dict in Python) stores key-value pairs with O(1) average access, insert, delete. Internally uses hashing + collision resolution. Common patterns in interviews: frequency counter (count chars), two-sum (store complements), sliding window, anagram detection, group anagrams. Python dict is ordered (Python 3.7+). defaultdict and Counter from collections are very useful."
+  },
+  {
+    "question": "What is a priority queue?",
+    "answer": "Priority Queue processes elements in order of priority (not insertion order). Min-PQ: smallest element first. Max-PQ: largest first. Implemented using Heap. Operations: insert O(log n), extract-min/max O(log n), peek O(1). In Python: heapq module (min-heap by default). For max-heap: negate values. Use cases: Dijkstra's, Prim's, Top-K elements, Merge K sorted lists, Median maintenance."
+  },
+  {
+    "question": "What is the difference between process and thread?",
+    "answer": "Process: independent program in execution with its own memory space, PCB, files. Thread: lightweight unit within a process, shares memory with other threads in same process. Context switching: faster for threads. Communication: IPC for processes, shared memory for threads. Isolation: process crash doesn't affect others; thread crash can crash the process. Python GIL limits thread parallelism — use multiprocessing for CPU-bound tasks."
+  },
+  {
+    "question": "What is inter-process communication?",
+    "answer": "IPC (Inter-Process Communication) allows processes to exchange data. Methods: Pipes (unidirectional, parent-child), Named Pipes (FIFO, unrelated processes), Message Queues (send/receive messages), Shared Memory (fastest — processes map same memory region), Semaphores (synchronization), Sockets (network or local communication), Signals (async notification). Python: multiprocessing.Queue, Pipe, shared memory."
+  },
+  {
+    "question": "What is memory leak?",
+    "answer": "Memory Leak occurs when a program allocates memory but never frees it, causing memory to be unavailable for reuse. In C/C++: forget to call free()/delete. In Java/Python: objects with lingering references (event listeners, cached objects, circular references). Detection tools: Valgrind (C/C++), memory_profiler (Python), JVisualVM (Java), Chrome DevTools (JS). Prevention: use RAII, weak references, proper lifecycle management."
+  },
+  {
+    "question": "What is a REST vs GraphQL vs gRPC?",
+    "answer": "REST: multiple endpoints, over/under-fetching possible, stateless, HTTP/JSON, widely used. GraphQL: single endpoint, client specifies exact data needed, great for complex nested data, Facebook-developed. gRPC: Google's RPC framework, Protocol Buffers (binary, faster than JSON), streaming support, strong typing, great for microservices internal communication. Choose: REST for simple APIs, GraphQL for flexible client needs, gRPC for high-performance microservices."
+  },
+  {
+    "question": "What is CAP theorem?",
+    "answer": "CAP Theorem: a distributed system can guarantee only 2 of 3 properties simultaneously. C - Consistency: all nodes see same data at same time. A - Availability: every request gets a response. P - Partition Tolerance: system works despite network partitions. Since network partitions are unavoidable, choose CP (MySQL, MongoDB) or AP (Cassandra, CouchDB). Important for system design interviews!"
+  },
+  {
+    "question": "What is eventual consistency?",
+    "answer": "Eventual Consistency: in a distributed system, if no new updates are made, all replicas will eventually converge to the same value. It's an AP system (from CAP theorem). Examples: DNS propagation, Amazon DynamoDB, Cassandra. Contrast with Strong Consistency: all reads reflect the latest write immediately. Trade-off: better availability and performance vs temporary data inconsistency."
+  },
+  {
+    "question": "What is database indexing?",
+    "answer": "Indexing speeds up data retrieval at the cost of extra storage and slower writes. Types: B-Tree Index (default — range queries), Hash Index (exact match — O(1)), Composite Index (multiple columns), Unique Index, Full-Text Index (LIKE searches), Covering Index (all needed columns in index). When to index: columns in WHERE, JOIN, ORDER BY. Avoid: over-indexing slows INSERT/UPDATE/DELETE."
+  },
+  {
+    "question": "What is database sharding?",
+    "answer": "Sharding horizontally partitions data across multiple database instances (shards). Each shard holds a subset of data. Shard key determines which shard stores a row. Benefits: Horizontal scalability, Better performance. Challenges: Complex queries across shards, Rebalancing, Hotspot shards. Types: Range-based, Hash-based, Directory-based. Used by: Instagram, Pinterest, Twitter. MongoDB has built-in sharding."
+  },
+  {
+    "question": "What is message queue?",
+    "answer": "Message Queue enables async communication between services. Producer sends messages to queue; Consumer reads from queue when ready. Benefits: Decoupling, Load leveling, Retry on failure, Scalability. Tools: RabbitMQ (AMQP protocol, complex routing), Apache Kafka (high-throughput event streaming, persistent, replay), AWS SQS, Redis Pub/Sub, Celery (Python task queue). Use case: Order processing, Email sending, Notifications."
+  },
+  {
+    "question": "What is Kafka?",
+    "answer": "Apache Kafka is a distributed event streaming platform. Key concepts: Topic (category of messages), Partition (parallel processing), Broker (Kafka server), Producer (sends messages), Consumer (reads messages), Consumer Group, Offset (position in partition). Features: High throughput, Fault-tolerant (replication), Persistent storage (configurable retention), Replay messages. Used by: LinkedIn, Uber, Netflix for real-time pipelines."
+  },
+  {
+    "question": "What is serverless architecture?",
+    "answer": "Serverless: developers write functions without managing servers. Cloud provider auto-scales, runs, and bills per invocation. FaaS (Function as a Service): AWS Lambda, Azure Functions, Google Cloud Functions. Benefits: No server management, Auto-scaling, Pay per use, Fast deployment. Drawbacks: Cold start latency, Stateless (no persistent connections), Vendor lock-in, Debugging complexity. Great for: event-driven workloads, APIs, data processing."
+  },
+  {
+    "question": "What is terraform?",
+    "answer": "Terraform is an Infrastructure as Code (IaC) tool by HashiCorp. Define infrastructure in HCL (HashiCorp Configuration Language) — provision servers, databases, networks across AWS, Azure, GCP. Commands: terraform init, plan, apply, destroy. State file tracks actual infrastructure. Benefits: Version control for infra, Reproducible environments, Multi-cloud support. Compare: AWS CloudFormation (AWS-only), Pulumi (uses programming languages)."
+  },
+  {
+    "question": "What is Ansible?",
+    "answer": "Ansible is a configuration management and automation tool. Agentless (uses SSH). Playbooks written in YAML define tasks. Key concepts: Inventory (list of hosts), Playbook (automation tasks), Role (reusable task collection), Module (unit of work — copy, apt, service, template). Use cases: Server configuration, Application deployment, Patch management. Compare: Chef/Puppet (agent-based, more complex)."
+  },
+  {
+    "question": "What is Nginx?",
+    "answer": "Nginx is a high-performance web server, reverse proxy, and load balancer. Use cases: Serve static files, Reverse proxy to backend (Node.js, Django), Load balance across servers, SSL termination, Rate limiting, Caching. Event-driven architecture handles thousands of concurrent connections. Config in /etc/nginx/nginx.conf. Compare: Apache (process-based, slower under high concurrency)."
+  },
+  {
+    "question": "What is a CDN?",
+    "answer": "CDN (Content Delivery Network) is a network of servers distributed globally that delivers content to users from the nearest location. Benefits: Reduced latency, High availability, DDoS protection, Offload origin server. Content cached: Images, videos, JS, CSS, HTML. Providers: Cloudflare, AWS CloudFront, Fastly, Akamai. Cache invalidation: when content updates, CDN cache must be purged."
+  },
+  {
+    "question": "What is rate limiting?",
+    "answer": "Rate Limiting controls how many requests a client can make in a given time window. Prevents: DDoS attacks, API abuse, resource starvation. Algorithms: Fixed Window Counter, Sliding Window Log, Token Bucket (smooth bursts), Leaky Bucket (constant rate). Implementation: Redis (distributed rate limiting across servers). HTTP 429 Too Many Requests status code. API keys used to identify clients."
+  },
+  {
+    "question": "What is SSH?",
+    "answer": "SSH (Secure Shell) is a cryptographic protocol for secure remote login and command execution. Port: 22. Authentication: Password or Public-Key (more secure). Commands: ssh user@host, ssh-keygen (generate keys), ssh-copy-id (copy public key to server), scp (secure file copy), sftp (secure FTP). SSH tunneling for port forwarding. Used by: all developers accessing servers, GitHub authentication."
+  },
+  {
+    "question": "What are data types in Python?",
+    "answer": "Python Data Types: Numeric: int (arbitrary precision), float (64-bit), complex. Sequence: str (immutable), list (mutable), tuple (immutable). Mapping: dict. Set: set (mutable, unique), frozenset (immutable). Boolean: bool (True/False). NoneType: None. Type checking: type(), isinstance(). Type conversion: int(), str(), float(), list(), tuple(), set(). Everything in Python is an object."
+  },
+  {
+    "question": "What is file handling in Python?",
+    "answer": "File Handling in Python: open(filename, mode) — modes: 'r' read, 'w' write (overwrites), 'a' append, 'rb'/'wb' binary. Best practice: use with statement (auto-closes). Methods: read(), readline(), readlines(), write(), writelines(). JSON files: json.load() and json.dump(). CSV: csv module or pandas read_csv(). File operations: os.path.exists(), os.remove(), os.rename(), shutil.copy()."
+  },
+  {
+    "question": "What is pip?",
+    "answer": "pip is Python's package manager. Commands: pip install package, pip install package==version, pip install -r requirements.txt, pip uninstall package, pip list (installed packages), pip freeze > requirements.txt (save dependencies), pip show package (details), pip upgrade pip. Virtual environments: python -m venv venv, source venv/bin/activate (Linux/Mac), venv\\Scripts\\activate (Windows)."
+  },
+  {
+    "question": "What is virtual environment in Python?",
+    "answer": "Virtual Environment isolates project dependencies so different projects can use different package versions. Create: python -m venv myenv. Activate: source myenv/bin/activate (Linux/Mac) or myenv\\Scripts\\activate (Windows). Deactivate: deactivate. Then pip install only affects this env. Tools: venv (built-in), virtualenv, conda (Anaconda — for data science), Poetry (modern dependency management)."
+  },
+  {
+    "question": "What is type hinting in Python?",
+    "answer": "Type Hints (PEP 484) add optional type annotations to Python code. Syntax: def greet(name: str) -> str. Benefits: Better IDE support, Easier to understand code, Catch bugs early with mypy. Common types: int, str, float, bool, list, dict, tuple, Optional[str] (can be None), Union[int, str], List[int], Dict[str, int]. from typing import List, Dict, Optional, Union, Tuple, Any."
+  },
+  {
+    "question": "What is async programming in Python?",
+    "answer": "Async programming handles I/O-bound tasks concurrently without blocking. asyncio library. async def defines a coroutine. await pauses execution until async operation completes. event loop runs coroutines. asyncio.run(main()) to start. aiohttp for async HTTP requests. Use for: web scraping, API calls, database queries. Does NOT help CPU-bound tasks — use multiprocessing instead."
+  },
+  {
+    "question": "What is web scraping?",
+    "answer": "Web Scraping extracts data from websites programmatically. Python tools: requests (fetch HTML), BeautifulSoup (parse HTML), Scrapy (full scraping framework), Selenium (JavaScript-rendered pages), Playwright (modern browser automation). Ethics: respect robots.txt, rate limit requests, don't overload servers, check ToS. Common uses: price monitoring, research data, lead generation, sports stats."
+  },
+  {
+    "question": "What is the difference between == and is in Python?",
+    "answer": "== checks value equality: [1,2] == [1,2] → True. is checks identity (same object in memory): [1,2] is [1,2] → False. Small integers (-5 to 256) are cached by Python so x = 5; y = 5; x is y → True (same object). Use == for value comparison always. Use is only for None check: if x is None: (preferred over if x == None). Never use is for string or number comparison in production."
+  },
+  {
+    "question": "What is *args and **kwargs?",
+    "answer": "*args allows a function to accept any number of positional arguments as a tuple. **kwargs allows any number of keyword arguments as a dict. Example: def func(*args, **kwargs): print(args, kwargs). Call: func(1,2,3, name='Raj', age=20) → (1,2,3) {'name':'Raj','age':20}. Order: def f(pos, *args, kw_only, **kwargs). Used in decorators, wrapper functions, flexible APIs."
+  },
+  {
+    "question": "What is Python GIL?",
+    "answer": "GIL (Global Interpreter Lock) is a mutex in CPython that allows only one thread to execute Python bytecode at a time. Consequence: CPU-bound tasks don't benefit from multithreading in Python. Solution for CPU-bound: use multiprocessing (each process has its own GIL). I/O-bound tasks still benefit from threading (GIL released during I/O). Alternatives: Jython, IronPython have no GIL. Python 3.13 working on removing GIL."
+  },
+  {
+    "question": "What is a Python context manager?",
+    "answer": "Context Manager handles setup and teardown automatically using with statement. Most common: with open('file.txt') as f: — ensures file is closed even if exception occurs. Custom context manager: define __enter__ and __exit__ methods, or use @contextmanager decorator with yield. Use cases: file handling, database connections, locks, timers, mocking in tests."
+  },
+  {
+    "question": "What is MongoDB vs MySQL?",
+    "answer": "MongoDB (NoSQL): Schema-less documents, Flexible structure, Horizontal scaling (sharding), JSON-like BSON storage, No joins (embed documents), Great for unstructured/variable data, fast prototyping. MySQL (SQL/Relational): Fixed schema, ACID compliant, Strong consistency, Powerful JOINs, Vertical scaling, Great for structured data with relationships. Choose MySQL for: banking, inventory. Choose MongoDB for: user profiles, catalogs, real-time analytics."
+  },
+  {
+    "question": "What is REST API authentication?",
+    "answer": "Common REST API Authentication methods: API Keys (simple, include in header or query param), Basic Auth (base64 encoded user:pass — insecure without HTTPS), JWT (stateless tokens, signed, include in Authorization: Bearer header), OAuth 2.0 (delegated authorization, used for third-party logins), Session Cookies (stateful, server stores session). Best practice: always use HTTPS, short-lived tokens, refresh tokens for long sessions."
+  },
+  {
+    "question": "What is TypeScript?",
+    "answer": "TypeScript is a statically typed superset of JavaScript developed by Microsoft. Adds: Type annotations, Interfaces, Generics, Enums, Decorators, Better IDE support. Compiles to plain JavaScript. Benefits: Catch type errors at compile time, Better refactoring, Self-documenting code, Great for large codebases. Used with: React, Angular (built with TS), Node.js, Next.js. File extension: .ts or .tsx."
+  },
+  {
+    "question": "What is Next.js?",
+    "answer": "Next.js is a React framework for production-ready web applications. Features: Server-Side Rendering (SSR), Static Site Generation (SSG), Incremental Static Regeneration (ISR), API Routes (build backend in same project), File-based routing, Image Optimization, Built-in TypeScript support. Used by: Netflix, TikTok, GitHub, Twitch. Best choice for full-stack React applications."
+  },
+  {
+    "question": "What is Vue.js?",
+    "answer": "Vue.js is a progressive JavaScript framework for building UIs. Features: Reactive data binding, Component-based architecture, Vue CLI, Vuex (state management), Vue Router, Composition API (Vue 3). Simpler learning curve than React. Single File Components (.vue) include template, script, style. Used by: Alibaba, Xiaomi, Adobe. Nuxt.js is Vue's Next.js equivalent for SSR."
+  },
+  {
+    "question": "What is Tailwind CSS?",
+    "answer": "Tailwind CSS is a utility-first CSS framework. Instead of pre-built components, it provides utility classes (flex, mt-4, text-center, bg-blue-500). Benefits: No naming CSS classes, Consistent design system, Highly customizable, Purges unused CSS (tiny bundle). Downsides: HTML can look cluttered with many classes. Compare: Bootstrap (component-based), Tailwind (utility-based). Works great with React, Next.js, Vue."
+  },
+  {
+    "question": "What is Redux?",
+    "answer": "Redux is a state management library for JavaScript apps (commonly used with React). Core concepts: Store (single source of truth), Action (plain object describing what happened), Reducer (pure function that updates state), Dispatch (send action to reducer), Selector (read from store). Modern Redux uses Redux Toolkit (less boilerplate). Alternatives: Zustand, Jotai, Recoil, React Context + useReducer."
+  },
+  {
+    "question": "Tell me about your project.",
+    "answer": "Project explanation structure: 1) Problem statement — what problem does it solve? 2) Tech stack — languages, frameworks, tools used. 3) Your role — what did you specifically build? 4) Key features — what makes it unique? 5) Challenges — what was difficult and how did you solve it? 6) Results/Impact — users, performance improvement, etc. Always have 2-3 solid projects ready. Push code to GitHub before interviews!"
+  },
+  {
+    "question": "What is good coding practice?",
+    "answer": "Good Coding Practices: Meaningful variable/function names, Single Responsibility Principle (each function does one thing), DRY (Don't Repeat Yourself), KISS (Keep It Simple, Stupid), YAGNI (You Aren't Gonna Need It), Write comments for WHY not WHAT, Unit tests, Proper error handling, Code reviews, Version control (Git), Consistent formatting (Prettier, Black for Python), SOLID principles."
+  },
+  {
+    "question": "What is SOLID principles?",
+    "answer": "SOLID Principles for clean OOP design: S - Single Responsibility (one class, one job), O - Open/Closed (open for extension, closed for modification), L - Liskov Substitution (subclass can replace parent without breaking code), I - Interface Segregation (no forced implementation of unused methods), D - Dependency Inversion (depend on abstractions, not concretions). Following SOLID makes code maintainable, testable, and scalable."
+  },
+  {
+    "question": "What is clean code?",
+    "answer": "Clean Code is readable, maintainable code that other developers can understand. Principles: Meaningful names (getUserById not getU), Functions should be small and do one thing, No magic numbers (use constants), Avoid deep nesting, Consistent formatting, Delete dead code, Write self-documenting code, Minimal comments (good code explains itself). Book: Clean Code by Robert C. Martin (Uncle Bob) — a must-read for every developer."
+  },
+  {
+    "question": "What is the internet?",
+    "answer": "The Internet is a global network of interconnected computers communicating via standardized protocols (TCP/IP). Key components: Routers (forward packets), DNS (domain to IP), HTTP/HTTPS (web), SMTP (email), FTP (file transfer), Backbone networks (high-speed fiber). ISP (Internet Service Provider) connects users to the internet. WWW (World Wide Web) is a service built on top of the internet using HTTP."
+  },
+  {
+    "question": "What is IPv4 vs IPv6?",
+    "answer": "IPv4: 32-bit address, ~4.3 billion addresses (example: 192.168.1.1). Running out due to internet growth — NAT (Network Address Translation) extends life. IPv6: 128-bit address, 340 undecillion addresses (example: 2001:0db8:85a3::8a2e:0370:7334). Features: No NAT needed, Auto-configuration, Better security (IPSec built-in). Transition: dual-stack (both IPv4+IPv6). Most modern systems support both."
+  },
+  {
+    "question": "What is subnetting?",
+    "answer": "Subnetting divides a large network into smaller sub-networks. Subnet Mask: 255.255.255.0 (/24) means first 24 bits are network, last 8 bits are hosts → 256 addresses (254 usable). CIDR notation: 192.168.1.0/24. Benefits: Reduces broadcast traffic, Better security, Efficient IP usage. Practice: calculate network address, broadcast address, valid host range, number of subnets. Common in networking interviews."
+  }
+]
